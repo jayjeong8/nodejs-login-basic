@@ -15,7 +15,7 @@ body {
     background-color: #d5d1d1;
 }
 
-.login-container {
+.login-container, .message-container {
     width: 600px;
     height: 500px;
     margin: 300px auto;
@@ -24,9 +24,23 @@ body {
     box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.15);
 }
 
-h1 {
+.message-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1, h2 {
     font-size: 48px;
     font-weight: 300;
+    color: var(--gray);
+}
+
+h2 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 700;
     color: var(--gray);
 }
 
@@ -61,6 +75,7 @@ input:focus {
     outline: none;
     border-bottom: 4px solid var(--green);
 }
+
 input::placeholder {
     color: #5e6c5f;
     font-size: 20px;
@@ -81,4 +96,10 @@ button {
 
 button:hover {
     background-color: var(--gray);
+}
+
+a {
+    text-decoration: none;
+    color: var(--green);
+    border-bottom: 1px solid var(--green);
 }
