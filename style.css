@@ -1,0 +1,84 @@
+:root {
+    --green: #1b8d4c;
+    --gray: #39433a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-systemm BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 24px;
+}
+
+body {
+    background-color: #d5d1d1;
+}
+
+.login-container {
+    width: 600px;
+    height: 500px;
+    margin: 300px auto;
+    padding: 40px 60px;
+    border-radius: 40px;
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+form {
+    margin-top: 64px;
+}
+
+label, input {
+    display: block;
+
+}
+
+label {
+    margin-bottom: 8px;
+    transform: translateX(1px);
+    color: var(--green);
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px 2px;
+    margin-bottom: 28px;
+    background: none;
+    color: var(--gray);
+    border: none;
+    border-bottom: 2px solid var(--gray);
+    font-size: 22px;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 4px solid var(--green);
+}
+input::placeholder {
+    color: #5e6c5f;
+    font-size: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 16px 2px;
+    margin-top: 20px;
+    background-color: var(--green);
+    color: #f2f2f2;
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--gray);
+}
